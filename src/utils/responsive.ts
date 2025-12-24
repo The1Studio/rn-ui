@@ -1,5 +1,5 @@
-import { useWindowDimensions, PixelRatio, Dimensions } from "react-native";
-import { scale, verticalScale, moderateScale } from "react-native-size-matters";
+import { useWindowDimensions, PixelRatio, Dimensions } from 'react-native';
+import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
 
 export const useResponsive = () => {
   const { width, height, fontScale } = useWindowDimensions();
@@ -32,11 +32,11 @@ export const useResponsive = () => {
   };
 };
 
-const { height, width } = Dimensions.get("window");
+const { height, width } = Dimensions.get('window');
 
-export const widthPercentageToDP = (widthPercent: any) => {
+export const widthPercentageToDP = (widthPercent: number | string) => {
   const elemWidth =
-    typeof widthPercent === "number" ? widthPercent : parseFloat(widthPercent);
+    typeof widthPercent === 'number' ? widthPercent : parseFloat(widthPercent);
   return PixelRatio.getFontScale() >= 1
     ? PixelRatio.roundToNearestPixel((width * elemWidth) / 100)
     : Math.round(
@@ -44,9 +44,9 @@ export const widthPercentageToDP = (widthPercent: any) => {
       );
 };
 
-export const heightPercentageToDP = (heightPercent: any) => {
+export const heightPercentageToDP = (heightPercent: number | string) => {
   const elemHeight =
-    typeof heightPercent === "number"
+    typeof heightPercent === 'number'
       ? heightPercent
       : parseFloat(heightPercent);
   return PixelRatio.getFontScale() >= 1
@@ -58,7 +58,7 @@ export const heightPercentageToDP = (heightPercent: any) => {
 
 export const responsiveFontWidth = (widthPercent: number | string) => {
   const elemWidth =
-    typeof widthPercent === "number" ? widthPercent : parseFloat(widthPercent);
+    typeof widthPercent === 'number' ? widthPercent : parseFloat(widthPercent);
   return (
     PixelRatio.roundToNearestPixel((width * elemWidth) / 100) /
     PixelRatio.getFontScale()
@@ -72,18 +72,18 @@ export const responsiveFontWidth = (widthPercent: number | string) => {
 const widthBaseScale = width / 430;
 const heightBaseScale = height / 932;
 
-function normalize(size: number, based = "width") {
+function normalize(size: number, based = 'width') {
   const newSize =
-    based === "height" ? size * heightBaseScale : size * widthBaseScale;
+    based === 'height' ? size * heightBaseScale : size * widthBaseScale;
   return Math.round(PixelRatio.roundToNearestPixel(newSize));
 }
 /* responsive width from figma px to px */
 export const widthPixel = (size: number) => {
-  return normalize(size, "width");
+  return normalize(size, 'width');
 };
 /* responsive height from figma px to px */
 export const heightPixel = (size: number) => {
-  return normalize(size, "height");
+  return normalize(size, 'height');
 };
 
 /* responsive font from figma px to px */
