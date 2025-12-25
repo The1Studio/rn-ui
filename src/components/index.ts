@@ -17,4 +17,5 @@ export * from './RadioButton';
 export * from './FormRadioGroup';
 export * from './CollapsibleCard';
 export * from './Avatar';
+export * from './DatePicker';
 export { default as BottomSheetModal } from './BottomSheetModal';

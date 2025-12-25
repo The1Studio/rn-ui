@@ -10,7 +10,9 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-hook-form": "^7.0.0"
+    "react-hook-form": "^7.0.0",
+    "react-native-ui-datepicker": "*",
+    "dayjs": "*"
   },
   "devDependencies": {
     "@types/react": "~19.1.0",
