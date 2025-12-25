@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import {
   Animated,
   Dimensions,
+  Easing,
   Modal,
   Text,
   TouchableOpacity,
@@ -11,6 +12,7 @@ import {
 import CloseIcon from '../icons/CloseIcon';
 
 const { height: SCREEN_HEIGHT } = Dimensions.get('window');
+const ANIMATION_DURATION = 300;
 
 interface IBottomSheetModalProps {
   modalVisible: boolean;
@@ -34,16 +36,15 @@ const BottomSheetModal = ({
   const animateIn = useCallback(() => {
     setIsVisible(true);
     Animated.parallel([
-      Animated.spring(translateY, {
+      Animated.timing(translateY, {
         toValue: 0,
-        damping: 20,
-        stiffness: 150,
-        mass: 0.8,
+        duration: ANIMATION_DURATION,
+        easing: Easing.out(Easing.cubic),
         useNativeDriver: true,
       }),
       Animated.timing(backdropOpacity, {
         toValue: 1,
-        duration: 250,
+        duration: ANIMATION_DURATION,
         useNativeDriver: true,
       }),
     ]).start();
@@ -51,16 +52,15 @@ const BottomSheetModal = ({
 
   const animateOut = useCallback(() => {
     Animated.parallel([
-      Animated.spring(translateY, {
+      Animated.timing(translateY, {
         toValue: SCREEN_HEIGHT,
-        damping: 20,
-        stiffness: 150,
-        mass: 0.8,
+        duration: ANIMATION_DURATION,
+        easing: Easing.in(Easing.cubic),
         useNativeDriver: true,
       }),
       Animated.timing(backdropOpacity, {
         toValue: 0,
-        duration: 200,
+        duration: ANIMATION_DURATION,
         useNativeDriver: true,
       }),
     ]).start(() => {
