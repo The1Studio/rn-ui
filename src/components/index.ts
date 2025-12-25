@@ -7,4 +7,6 @@ export * from './FormTextInput';
 export * from './FormPasswordInput';
 export * from './SelectField';
 export * from './FormSelectField';
+export * from './SelectMultiple';
+export * from './FormSelectMultiple';
 export { default as BottomSheetModal } from './BottomSheetModal';
