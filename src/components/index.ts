@@ -11,4 +11,6 @@ export * from './SelectMultiple';
 export * from './FormSelectMultiple';
 export * from './ConfirmModal';
 export * from './Skeleton';
+export * from './Checkbox';
+export * from './FormCheckbox';
 export { default as BottomSheetModal } from './BottomSheetModal';

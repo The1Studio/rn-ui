@@ -31,7 +31,7 @@ export interface ConfirmModalProps {
 
 const variantColors: Record<ConfirmModalVariant, string> = {
   danger: colors.error,
-  warning: '#F59E0B',
+  warning: colors.warning,
   info: colors.primary,
 };
 
