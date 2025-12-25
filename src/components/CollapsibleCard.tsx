@@ -128,6 +128,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.border,
     overflow: 'hidden',
+    width: '100%',
   },
   containerDisabled: {
     opacity: 0.6,
