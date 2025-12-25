@@ -10,4 +10,5 @@ export * from './FormSelectField';
 export * from './SelectMultiple';
 export * from './FormSelectMultiple';
 export * from './ConfirmModal';
+export * from './Skeleton';
 export { default as BottomSheetModal } from './BottomSheetModal';
