@@ -13,7 +13,6 @@ import {
   TextStyle,
 } from 'react-native';
 import { colors } from '@repo/core';
-import CloseIcon from './icons/CloseIcon';
 import ArrowDownIcon from './icons/ArrowDownIcon';
 
 // Enable LayoutAnimation on Android
