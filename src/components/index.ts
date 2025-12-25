@@ -5,4 +5,6 @@ export * from './Spacer';
 export * from './TextInput';
 export * from './FormTextInput';
 export * from './FormPasswordInput';
+export * from './SelectField';
+export * from './FormSelectField';
 export { default as BottomSheetModal } from './BottomSheetModal';
