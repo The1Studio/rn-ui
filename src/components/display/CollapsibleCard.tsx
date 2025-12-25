@@ -13,7 +13,7 @@ import {
   TextStyle,
 } from 'react-native';
 import { colors } from '@repo/core';
-import ArrowDownIcon from './icons/ArrowDownIcon';
+import ArrowDownIcon from '../icons/ArrowDownIcon';
 
 // Enable LayoutAnimation on Android
 if (

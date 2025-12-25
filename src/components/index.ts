@@ -1,21 +1,14 @@
-export * from './Button';
-export * from './Card';
-export * from './Text';
-export * from './Spacer';
-export * from './TextInput';
-export * from './FormTextInput';
-export * from './FormPasswordInput';
-export * from './SelectField';
-export * from './FormSelectField';
-export * from './SelectMultiple';
-export * from './FormSelectMultiple';
-export * from './ConfirmModal';
-export * from './Skeleton';
-export * from './Checkbox';
-export * from './FormCheckbox';
-export * from './RadioButton';
-export * from './FormRadioGroup';
-export * from './CollapsibleCard';
-export * from './Avatar';
-export * from './DatePicker';
-export { default as BottomSheetModal } from './BottomSheetModal';
+// Base components
+export * from './base';
+
+// Form components
+export * from './form';
+
+// Feedback components
+export * from './feedback';
+
+// Display components
+export * from './display';
+
+// Icons
+export * from './icons';

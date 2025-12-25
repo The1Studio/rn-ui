@@ -9,7 +9,7 @@ import {
   TouchableWithoutFeedback,
   View,
 } from 'react-native';
-import CloseIcon from '../icons/CloseIcon';
+import CloseIcon from '../../icons/CloseIcon';
 
 const { height: SCREEN_HEIGHT } = Dimensions.get('window');
 const ANIMATION_DURATION = 300;

@@ -6,6 +6,7 @@ import {
   StyleSheet,
   ViewStyle,
   TextStyle,
+  StyleProp,
 } from 'react-native';
 import { colors } from '@repo/core';
 
@@ -21,7 +22,7 @@ export interface RadioButtonProps<T = string> {
   label?: string;
   disabled?: boolean;
   size?: 'small' | 'medium' | 'large';
-  style?: ViewStyle;
+  style?: StyleProp<ViewStyle>;
   labelStyle?: TextStyle;
 }
 

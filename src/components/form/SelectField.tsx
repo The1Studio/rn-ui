@@ -10,9 +10,9 @@ import {
   Pressable,
 } from 'react-native';
 import { colors } from '@repo/core';
-import ArrowDownIcon from './icons/ArrowDownIcon';
-import CloseIcon from './icons/CloseIcon';
-import BottomSheetModal from './BottomSheetModal';
+import ArrowDownIcon from '../icons/ArrowDownIcon';
+import CloseIcon from '../icons/CloseIcon';
+import BottomSheetModal from '../feedback/BottomSheetModal';
 
 export interface SelectOption<T = string | number> {
   label: string;

@@ -11,7 +11,7 @@ import {
 import DateTimePicker, { DateType } from 'react-native-ui-datepicker';
 import dayjs from 'dayjs';
 import { colors, formatDate, DateFormats } from '@repo/core';
-import CalendarIcon from './icons/CalendarIcon';
+import CalendarIcon from '../icons/CalendarIcon';
 
 export interface DatePickerProps {
   /** Selected date value */
