@@ -16,4 +16,5 @@ export * from './FormCheckbox';
 export * from './RadioButton';
 export * from './FormRadioGroup';
 export * from './CollapsibleCard';
+export * from './Avatar';
 export { default as BottomSheetModal } from './BottomSheetModal';
