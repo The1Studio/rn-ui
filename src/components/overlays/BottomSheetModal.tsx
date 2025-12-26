@@ -9,7 +9,7 @@ import {
   TouchableWithoutFeedback,
   View,
 } from 'react-native';
-import CloseIcon from '../../icons/CloseIcon';
+import { CloseIcon } from '../icons';
 
 const { height: SCREEN_HEIGHT } = Dimensions.get('window');
 const ANIMATION_DURATION = 300;
@@ -116,37 +116,37 @@ const BottomSheetModal = ({
               marginBottom: 4,
             }}
           />
-        <View
-          style={{
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            width: '100%',
-            padding: 16,
-            alignItems: 'center',
-          }}
-        >
           <View
             style={{
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              width: '100%',
+              padding: 16,
               alignItems: 'center',
             }}
           >
-            <Text
+            <View
               style={{
-                fontSize: 16,
-                fontWeight: 'bold',
+                alignItems: 'center',
               }}
             >
-              {title}
-            </Text>
+              <Text
+                style={{
+                  fontSize: 16,
+                  fontWeight: 'bold',
+                }}
+              >
+                {title}
+              </Text>
+            </View>
+            {renderCloseButton ? (
+              renderCloseButton()
+            ) : (
+              <TouchableOpacity hitSlop={10} onPress={handleClose}>
+                <CloseIcon color="#000" />
+              </TouchableOpacity>
+            )}
           </View>
-          {renderCloseButton ? (
-            renderCloseButton()
-          ) : (
-            <TouchableOpacity hitSlop={10} onPress={handleClose}>
-              <CloseIcon color="#000" />
-            </TouchableOpacity>
-          )}
-        </View>
           {renderContent()}
         </Animated.View>
       </View>

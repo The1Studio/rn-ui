@@ -12,7 +12,7 @@ import {
 import { colors } from '@repo/core';
 import ArrowDownIcon from '../icons/ArrowDownIcon';
 import CloseIcon from '../icons/CloseIcon';
-import BottomSheetModal from '../feedback/BottomSheetModal';
+import BottomSheetModal from '../overlays/BottomSheetModal';
 
 export interface SelectOption<T = string | number> {
   label: string;
