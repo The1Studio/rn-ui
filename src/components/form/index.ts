@@ -10,3 +10,4 @@ export * from './FormSelectField';
 export * from './SelectMultiple';
 export * from './FormSelectMultiple';
 export * from './DatePicker';
+export * from './DateRangePicker';
