@@ -12,6 +12,9 @@
     "react-native": "*",
     "react-hook-form": "^7.0.0",
     "react-native-ui-datepicker": "*",
+    "react-native-gesture-handler": "*",
+    "react-native-reanimated": "*",
+    "react-native-worklets": "*",
     "dayjs": "*"
   },
   "devDependencies": {
